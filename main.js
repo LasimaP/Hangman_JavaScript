@@ -1,11 +1,8 @@
-// Use "input()" to input a line from the user
-// Use "input(str)" to print some text before requesting input
-// You will need this in the following stages
 const input = require('sync-input');
 //import input from "sync-input";
 
 const wordList = ["python", "java", "swift", "javascript"];
-let attempts = 8;
+let attempts;
 let wins = 0;
 let losses = 0;
 let quit = false;
@@ -13,6 +10,7 @@ let quit = false;
 console.log("H A N G M A N");
 
 while (!quit) {
+    attempts = 8;
     let option = menu();
     switch (option) {
         case "play":
